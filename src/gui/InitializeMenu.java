@@ -10,6 +10,9 @@ public class InitializeMenu  {
 
         menu = new Menu( window );
         menu.addJMenu( "File" );
+        menu.addJMenu( "Edit" );
+        menu.addJMenu( "View" );
+        menu.addJMenu( "Help" );
         menu.addJMenuItem( "File", new JMenuItem( "New" ) );
         menu.addJMenuItem( "File", new JMenuItem( "Open" ) );
         menu.addJMenuItem( "File", new JMenuItem( "Save" ) );
