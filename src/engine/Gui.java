@@ -1,15 +1,15 @@
 package engine;
 
 import gui.InitializeMenu;
-import gui.InitializeWindow;
+import gui.windows.MainWindow;
 
 public class Gui {
 
-    InitializeWindow window;
+    MainWindow window; //Okno główne
 
     public Gui() {
-        this.window = new InitializeWindow( 800, 600, "Komunikator 1.0" );
-        new InitializeMenu( window ); // Tworzę pasek menu
-        window.ShowWindow();
+        window = new MainWindow( 800, 600, "Komunikator 1.0" );
+        new InitializeMenu( window ); // Tworzę pasek pasek_menu
+        window.ShowWindow(); //Wyświetlam okno
     }
 }

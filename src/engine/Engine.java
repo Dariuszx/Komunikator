@@ -18,8 +18,5 @@ public class Engine {
         } catch( ErrorException e ) {
             e.HandleException();
         }
-
     }
-
-
 }

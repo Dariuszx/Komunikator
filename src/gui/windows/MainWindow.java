@@ -1,18 +1,21 @@
-package gui;
+package gui.windows;
 
 import javax.swing.*;
 
-public class InitializeWindow extends JFrame {
+public class MainWindow extends JFrame {
 
     private int x;
     private int y;
     private String title;
+    public JDesktopPane desktop;
 
-    public InitializeWindow( int x, int y, String title ) {
+    public MainWindow( int x, int y, String title ) {
 
         this.x = x;
         this.y = y;
         this.title = title;
+        this.desktop = new JDesktopPane();
+        add( desktop );
 
         CreateWindow();
     }
